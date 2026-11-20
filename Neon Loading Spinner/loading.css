@@ -1,0 +1,88 @@
+body {
+    background: black;
+    margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaders {
+    position: relative;
+    height: 4rem;
+    width: 4rem;
+    border: 2px solid aqua;
+    margin: auto;
+    margin-top:15%;
+    border-radius: 10px;
+    border-top-color: aqua;
+    box-shadow: 0 0 10px aqua inset; 
+    animation: spin1 0.5s linear infinite;
+}
+
+.loader1,
+.loader2,
+.loader3 {
+  position: absolute;
+  border-radius: 10%;
+  border: 2px solid transparent;
+}
+
+.loader1 {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 0 20px aqua inset;
+  animation: spin2 0.5s linear infinite ;
+}
+
+.loader2 {
+  width: 2rem;
+  height: 2rem;
+  animation: spin3 0.5s linear infinite ;
+}
+
+.loader3 {
+  width: 2rem;
+  height: 2rem;
+  animation: spin4 0.5s linear infinite ;
+  animation-delay: 0.2s;
+}
+
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  from {
+    transform: rotateX(0deg);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes spin3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin4 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+
